@@ -1,0 +1,16 @@
+{
+  "name": "YT Time",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "extension.html",
+    "default_title": "YT Time",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [{
+    "js": ["extension.js"],
+    "matches": ["http://*/*", "https://*/*"]
+  }],
+  "permissions": ["activeTab", "storage", "tabs", "webRequest","scripting"],
+  "host_permissions": ["*://*.youtube.com/*"]
+}
