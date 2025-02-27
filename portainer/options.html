@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  	<meta charset="UTF-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  	<title>Options Portainer Search</title>
+  	<script src="tailwind.min.js"></script>
+  	<link href="tailwind.min.css" rel="stylesheet">
+</head>
+<body class="p-4 text-gray-800">
+  	<h1 class="text-xl font-semibold mb-4">Configuration de l'extension</h1>
+  	<form id="optionsForm" class="space-y-4">
+  	  	<div>
+  	  		<label for="portainerUrl" class="block text-sm font-medium text-gray-700">URL de l'instance Portainer :</label>
+  	  		<input type="url" id="portainerUrl" name="portainerUrl" required class="mt-1 p-2 w-full border border-gray-300 rounded" placeholder="https://mon-portainer.example.com"/>
+  	  	</div>
+  	  	<div>
+  	  	  	<label for="apiKey" class="block text-sm font-medium text-gray-700">Access token Portainer :</label>
+  	  	  	<a id="createTokenLink" href="#" target="_blank" class="text-sm text-blue-600 hidden">Créer un access token</a>
+  	  	  	<input type="text" id="apiKey" name="apiKey" required class="mt-1 p-2 w-full border border-gray-300 rounded" placeholder="Votre access token Portainer"/>
+  	  	</div>
+  	  	<button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Enregistrer</button>
+  	  	<p id="statusMessage" class="text-sm text-gray-600"></p>
+  	</form>
+  	<script src="options.js"></script>
+</body>
+</html>

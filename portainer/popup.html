@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="tailwind.min.js"></script>
+	<link href="tailwind.min.css" rel="stylesheet">
+</head>
+<body class="p-4 bg-gray-50 text-gray-800 min-w-[300px] w-[800px] min-h-[200px]">
+	<h1 class="text-xl font-semibold mb-4">Recherche globale de conteneurs sur Portainer</h1>
+	<input type="text" id="searchInput" placeholder="Rechercher un conteneur..." class="w-full p-2 mb-4 border border-gray-300 rounded"/>
+
+	<div id="loader" class="hidden flex justify-center items-center my-2">
+		<svg class="animate-spin h-6 w-6 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+			<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+			<path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4l3-3-3-3v4a8 8 0 000 16v-4l-3 3 3 3v-4a8 8 0 01-8-8z"></path>
+		</svg>
+	</div>
+  
+	<div id="results" class="overflow-x-hidden overflow-y-auto max-w-full max-h-80">
+		<table class="min-w-full table-fixed text-sm text-left">
+			<thead class="bg-gray-200 text-gray-600 uppercase">
+				<tr>
+					<th class="py-1 px-2 w-[100px] break-all whitespace-normal">Conteneur</th>
+					<th class="py-1 px-2 w-[60px] break-all whitespace-normal">Status</th>
+					<th class="py-1 px-2 w-[150px] break-all whitespace-normal">Environnement</th>
+					<th class="py-1 px-2 w-[100px] break-all whitespace-normal">Stack</th>
+					<th class="py-1 px-2 w-[250px] break-all whitespace-normal">Actions</th>
+				</tr>
+			</thead>        
+			<tbody id="resultsBody" class="divide-y divide-gray-200"></tbody>
+		</table>    
+		<p id="infoMessage" class="text-gray-500 text-sm py-2"></p>
+	</div>
+  <script src="popup.js"></script>
+</body>
+</html>
