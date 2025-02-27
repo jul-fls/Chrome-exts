@@ -1,8 +1,8 @@
 {
 	"manifest_version": 3,
-	"name": "Portainer Containers Global Search",
+	"name": "Portainer Quick Access",
 	"version": "1.0.0",
-	"description": "Recherche dynamique de conteneurs sur une instance Portainer.",
+	"description": "Accès rapide aux conteneurs sur une instance Portainer.",
 	"permissions": [
 	  "storage"
 	],
