@@ -20,8 +20,8 @@ Cette extension Chrome permet de rechercher dynamiquement des conteneurs dans un
 Cette extension n'est pas disponible sur le Chrome Web Store, elle doit être installée manuellement.
 
 ### 📥 1. Télécharger l'extension
-1. Accédez au **dépôt GitLab** contenant le projet.
-2. Cliquez sur **"Code"** en haut à droite et sélectionnez **"Download source code au format ZIP"**.
+1. Accédez au **dépôt GitHub** contenant le projet.
+2. Cliquez [ici](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fjul-fls%2FChrome-exts%2Ftree%2Fmaster%2Fportainer) pour télécharger l'extension au format zip
 3. Une fois le téléchargement terminé, **décompressez** le fichier ZIP dans un dossier de votre choix.
 
 ### 🖥️ 2. Installer l'extension dans votre navigateur
